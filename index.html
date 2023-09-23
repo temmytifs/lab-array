@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class task</title>
+</head>
+
+<body>
+    <h1>lab-task</h1>
+
+    <script>
+
+
+
+
+
+        //  passing arugments by  value 
+
+        let sevenNum = [7, 13, 15, 21, 30, 4, 95];
+        let num = [""];
+        let numbers = Evennum(sevenNum);
+
+        document.write(numbers + ` the double of evenno in array <br>`);
+
+        function Evennum(num) {
+            for (let i = 0; i < num.length; i++) {
+                let num1 = num[i];
+                if (num1 % 2 == 0) {
+                    num1 = num1 * 2
+                }
+                num[i] = num1
+
+            }
+            return num;
+        }
+
+
+
+        let testArray = ["apple", "banana", "cherry", "date"];
+        let testArray4 = [""]// Expected result: [5, 6, 6, 4]
+        let result = test4(testArray);
+        document.write(result + ` the lenght of index array <br>`);
+
+        function test4(testArray4) {
+            for (let i = 0; i < testArray4.length; i++) {
+                let lenght = testArray4[i].length;
+                testArray4[i] = lenght;
+            } return testArray4;
+
+        }
+
+        let testArray51 = ["one", "two", "three", "four", "five"]
+        let result2 = test4(testArray51);
+        document.write(result2 + ` the lenght of index array<br>`);
+
+
+        // Edge case: Empty array, Expected result: []
+
+
+
+        let testArray6 = [[]];
+        let result3 = test4(testArray6);
+        document.write(result3 + `<br>`);
+
+        const testArray7 = [3.14, 2.71, 1.618, 1.0];
+        document.write("smallest index  " + testArray7.pop() + "<br>");
+
+        const testArray8 = [10.5, 20.2, 5.7, 30.1]; // Expected result: 2 (index of 5.7)
+        //use sort to re-arrange the element in the array 
+        document.write("sort arrays  " + testArray8.sort() + "<br>"  );
+        document.write("index of " + testArray8.pop() + "<br>");
+
+        const testArray9 = [-1.5, -2.0, -0.5, -0.2]; // Expected result: 1 (index of -2.0)
+        document.write("sort arrays  " + testArray9.sort() + "<br>");
+        document.write("index of " + testArray9.pop() + "<br>");
+
+        const testArray10 = [1, 2, 3, 4, 5];
+        const testArray11 = [1, 2, 3, 4, 5]; 
+        let ressult = testarray(testArray10, testArray11)
+        document.write(ressult + ` arrays are equal<br> `);
+
+        function testarray(testArray10, testArray11) {
+            for (let i = 0; i < testArray10.length; i++) {
+                let testing1 = testArray10[i]
+                let testing2 = testArray11[i]
+
+                if (testing1 !== testing2) {
+                    return false
+                } 
+            }
+            return true
+            
+        }
+
+        const testArray12 = [1, 2, 3, 4, 5];
+        const testArray13 = [1, 2, 3, 4, 6]; 
+
+        
+        let ressult2 = testarray(testArray12, testArray13)
+        document.write(ressult2 +  `<br>`);
+
+        function testarray(testArrayS, testArrayY) {
+            for (let i = 0; i < testArrayS.length; i++) {
+                let testing3 = testArrayS[i]
+                let testing4 = testArrayY[i]
+
+                if (testing3 !== testing4) {
+                    return false
+                } 
+            }
+            return true
+            
+        }
+
+        const testArray14 = [];
+        const testArray15 = []; // Edge case: Both empty arrays, Expected result: true (arrays are equal)
+         
+        let ressult3 = testarray(testArray14, testArray15)
+        document.write(ressult3 +  ` arrays are equal <br>`);
+
+        function testarray(testArray14, testArray15) {
+            for (let i = 0; i < testArray14.length; i++) {
+                let testing1 = testArray14[i]
+                let testing2 = testArray15[i]
+
+                if (testing1 !== testing2) {
+                    return false
+                } 
+            }
+            return true
+        }
+
+        const testArray16 = [1, 2, 3];
+        const testArray17 = [1, 2, 3, 4];
+        let ressult4 = testarray(testArray16, testArray17)
+        document.write(ressult4 +  ` arrays are not equal <br>`);
+
+        function testarray(testArray16, testArray17) {
+            for (let i = 0; i < testArray16.length; i++) {
+                let testing1 = testArray16.length
+                let testing2 = testArray17.length
+
+                if (testing1 !== testing2) {
+                    return false
+                } 
+            }
+            return true
+        }
+       
+        
+        let sumEd = [""]
+        let sum = 0;
+       
+        let testArray2 = [10, -5, 7, 2, 1]; 
+        let summed = summing(testArray2)
+
+        document.write(summed +  `<br>`)
+        // document.write(sumEd +'<br>')
+        function summing(sumEd) {
+            for (let i = 0; i < sumEd.length; i++) {
+                sum = sum + sumEd[i];      
+            } 
+            return sum
+        } 
+
+
+       
+        let sumEe = [""]
+        let sum1 = 0;
+
+        let sumArray = [1, 2, 3, 4, 5];
+        let busola = summer(sumArray);
+        document.write(busola + `<br>`)
+
+        function summer(sumEe) {
+            for (let i = 0; i < sumEe.length; i++) {
+                sum1 = sum1 + sumEe[i];
+            } 
+            return sum1
+        } 
+        
+
+
+        let sumEee = [""]
+        let sum2 = 0;
+
+        testArray3 = [];
+        let newsum = summers(testArray3);
+        document.write(newsum + `<br>`)
+
+        function summers(sumEee) {
+            for (let i = 0; i < sumEee.length; i++) {
+                sum2 = sum2 + sumEee[i];
+            } 
+            return sum2
+        } 
+        
+       
+    </script>
+</body>
+
+</html>
