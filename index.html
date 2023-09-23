@@ -76,10 +76,14 @@
         document.write("sort arrays  " + testArray9.sort() + "<br>");
         document.write("index of " + testArray9.pop() + "<br>");
 
+        
+
         const testArray10 = [1, 2, 3, 4, 5];
         const testArray11 = [1, 2, 3, 4, 5]; 
         let ressult = testarray(testArray10, testArray11)
         document.write(ressult + ` arrays are equal<br> `);
+
+        
 
         function testarray(testArray10, testArray11) {
             for (let i = 0; i < testArray10.length; i++) {
@@ -94,25 +98,9 @@
             
         }
 
-        const testArray12 = [1, 2, 3, 4, 5];
-        const testArray13 = [1, 2, 3, 4, 6]; 
-
         
-        let ressult2 = testarray(testArray12, testArray13)
-        document.write(ressult2 +  `<br>`);
 
-        function testarray(testArrayS, testArrayY) {
-            for (let i = 0; i < testArrayS.length; i++) {
-                let testing3 = testArrayS[i]
-                let testing4 = testArrayY[i]
-
-                if (testing3 !== testing4) {
-                    return false
-                } 
-            }
-            return true
-            
-        }
+      
 
         const testArray14 = [];
         const testArray15 = []; // Edge case: Both empty arrays, Expected result: true (arrays are equal)
@@ -148,6 +136,29 @@
             }
             return true
         }
+
+        const testArray12 = [1, 2, 3, 4, 5];
+        const testArray13 = [1, 2, 3, 4, 6]; 
+
+        
+        let ressult2 = testarray(testArray12, testArray13)
+        document.write(ressult2 +  ` arrays are not equal<br>`);
+
+        function testarray(testArrayS, testArrayY) {
+            if (testArrayS.length != testArrayY.length) {
+                return false;
+            }
+            for (let i = 0; i < testArrayS.length; i++) {
+                let testing3 = testArrayS[i]
+                let testing4 = testArrayY[i]
+
+                if (testing3 !== testing4) {
+                    return false
+                } 
+            }
+            return true
+            
+        }
        
         
         let sumEd = [""]
@@ -156,7 +167,7 @@
         let testArray2 = [10, -5, 7, 2, 1]; 
         let summed = summing(testArray2)
 
-        document.write(summed +  `<br>`)
+        document.write(summed +  ` the sum of array <br>`)
         // document.write(sumEd +'<br>')
         function summing(sumEd) {
             for (let i = 0; i < sumEd.length; i++) {
@@ -172,7 +183,7 @@
 
         let sumArray = [1, 2, 3, 4, 5];
         let busola = summer(sumArray);
-        document.write(busola + `<br>`)
+        document.write(busola + ` the sum of array <br>`)
 
         function summer(sumEe) {
             for (let i = 0; i < sumEe.length; i++) {
@@ -188,7 +199,7 @@
 
         testArray3 = [];
         let newsum = summers(testArray3);
-        document.write(newsum + `<br>`)
+        document.write(newsum + ` the sum of array <br>`)
 
         function summers(sumEee) {
             for (let i = 0; i < sumEee.length; i++) {
@@ -196,8 +207,11 @@
             } 
             return sum2
         } 
+
+        
         
        
+      
     </script>
 </body>
 
